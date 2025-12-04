@@ -1,0 +1,194 @@
+/* Basic Reset and Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Corporate Color Palette: Deep Blue (#0A2B4C) and Tech Accent (#00CCFF) */
+header {
+    background: #0A2B4C; 
+    color: #ffffff;
+    padding: 1rem 0;
+    border-bottom: 3px solid #00CCFF; /* Tech Accent */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00CCFF; 
+}
+
+/* HERO SECTION */
+.hero {
+    background: #ffffff;
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* General Button Style */
+.button {
+    display: inline-block;
+    background: #00CCFF;
+    color: #0A2B4C;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: 700;
+}
+
+.button:hover {
+    background: #00B3E0;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio-section {
+    padding: 4rem 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.portfolio-section h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0A2B4C;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.portfolio-item h4 {
+    color: #0A2B4C;
+    margin-bottom: 10px;
+}
+
+.venture-link {
+    display: block;
+    margin-top: 10px;
+    color: #0A2B4C;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.venture-link:hover {
+    color: #00CCFF;
+}
+
+/* ABOUT & CONTACT SECTIONS */
+.about-section, .contact-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-section {
+    background: #ffffff;
+}
+
+.contact-section h3, .about-section h3 {
+    color: #0A2B4C;
+    margin-bottom: 2rem;
+}
+
+/* Contact Form Styling */
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section input[type="text"], 
+.contact-section input[type="email"], 
+.contact-section textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-section textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* FOOTER */
+footer {
+    background: #0A2B4C;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
+
+footer a {
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #00CCFF;
+}
